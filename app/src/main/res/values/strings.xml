@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Byju by Saddam</string>
+    <string name="something_went_wrong">Something went wrong, please try again later</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="tester_name">Mohd Saddam</string>
+    <string name="tester_email">ansarideveloper88@gmail.com</string>
+    <string name="tester_number">7982938176</string>
+</resources>

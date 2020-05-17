@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_14sdp"
+        android:layout_marginRight="@dimen/_14sdp">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewFour"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_150sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_centerHorizontal="true"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="1.0"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:elevation="@dimen/_9sdp"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="MissingConstraints">
+
+
+                    <ImageView
+                        android:id="@+id/clBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_launcher_background"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:gravity="bottom"
+                        tools:ignore="MissingConstraints">
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.99"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:paddingBottom="@dimen/_10sdp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tvTitle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginEnd="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:letterSpacing="0.01"
+                                    android:lineSpacingExtra="-2sp"
+                                    android:gravity="bottom"
+                                    android:fontFamily="@font/roboto_slab_bold"
+                                    android:text="This screen shows News List Screen."
+                                    android:visibility="visible"
+                                    android:lines="3"
+                                    android:textColor="@color/white_smoke"
+                                    android:textSize="@dimen/_20sdp" />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="visible"
+                                    android:layout_marginLeft="9dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/tvNewsName"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="3dp"
+                                        android:layout_marginLeft="3dp"
+                                        android:layout_marginTop="2dp"
+                                        android:fontFamily="@font/roboto_slab_bold"
+                                        android:gravity="center_horizontal"
+                                        android:textColor="@color/Silver"
+                                        android:text="CCN"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textStyle="normal"/>
+
+                                    <TextView
+                                        android:id="@+id/tvData"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                       android:layout_marginRight="@dimen/_3sdp"
+                                        android:layout_marginLeft="@dimen/_10sdp"
+                                        android:layout_marginTop="2dp"
+                                        android:textColor="@color/Silver"
+                                        android:gravity="center_horizontal"
+                                        android:text="2019-05-18"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textStyle="normal"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:fitsSystemWindows="true"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+        app:layout_collapseMode="pin"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_1sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llToolBar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.20"
+                android:gravity="center|left"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivToolBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back_arrow"
+                    android:layout_alignParentLeft="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.80"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_bold"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center|left"
+                    android:singleLine="true"
+                    android:text="HEADLINES"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_29sdp"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+</layout>

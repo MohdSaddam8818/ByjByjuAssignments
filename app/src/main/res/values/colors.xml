@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+    <color name="white_smoke">#f2f2f2</color>
+    <color name="Silver">#bababa</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="Charcoal">#464646</color>
+    <color name="vivid_violet">#813589</color>
+</resources>
